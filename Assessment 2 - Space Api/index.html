@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Chivo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/icon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>API</title>
+</head>
+
+<body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg bg-transparent navbar-dark" id="navbar">
+        <a class="navbar-brand">
+            WELCOME TO SPACE
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="index.html">Explore</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="file/library.html">Search Information</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+        <div class="wrapper1"></div>
+            <span id="nasa-logo" class="row justify-content-center animate__animated animate__fadeOut">
+                <!-- <img src="assets/nasa-logo-web-rgb.png" alt="nasa logo animation" style="width: 300px; height: 150px;"> -->
+            </span>
+        <div class="wrapper2"></div>
+
+    <!-- Main Content -->
+    <main class="main-content container">
+       <section class="row justify-content-center">
+            <h3 class="row">Astronomy Picture of the Day</h3>
+            <div id="apod" class="col-lg-12 justify-content-center">
+                <!-- ASTRONOMY PICTURE OF THE DAY -->
+            </div> 
+            <div id="past-apods">
+                <div class ="br"></div>
+                <input type="date" id="apod-date" name="apod-date" value="2020-08-06" min="1995-06-20" max="2020-08-06">
+                <button class="btn btn-light" id="apod-btn">APOD</button>
+            </div>
+            <br>
+            <h3 class="ins">*Select A Specific Date To View A Specific Astronomy Picture*</h3>
+        </section>
+        <hr>
+        <hr>
+        <section class="row justify-content-center">
+            <h3 class="row">The International Space Station (ISS)</h3>
+            <img class= "issimg" src="assets/satimg.jpg" width="1000" height="500">
+            <p>The International Space Station (ISS) is the largest modular space station currently in low Earth orbit. It is a multinational collaborative project involving five participating space agencies: NASA (United States), Roscosmos (Russia), JAXA (Japan), ESA (Europe), and CSA (Canada).
+                 The ownership and use of the space station is established by intergovernmental treaties and agreements. The station serves as a microgravity and space environment research laboratory in which scientific research is conducted in astrobiology, astronomy, meteorology, physics, and other fields.
+                  The ISS is suited for testing the spacecraft systems and equipment required for possible future long-duration missions to the Moon and Mars.</p>
+            <div id="past-apods">
+                <div class="br1"></div>
+                <a class="isssel" href="file/iss.html">
+                    VIEW ISS LOCATION
+                </a>
+            </div>
+        </section>
+
+        <hr>
+    </main>
+
+    
+    <!-- SCRIPTS HERE -->
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <!-- LOCAL SCRIPTS -->
+    <script src="script/nasa.js"></script>
+    <script>
+        $(document).ready(x => {
+            $('.wrapper2').css('height', $(window).height() * 1.2);
+        });
+        $(window).resize(function () {
+            $('.wrapper2').css('height', $(window).height() * 1.2);
+        });
+
+    </script>
+</body>
+
+</html>

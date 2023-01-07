@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Jura', sans-serif;
+}
+
+body {
+    color: #fafad2;
+    background-image: url('../assets/nasa2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#navbar {
+    margin: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    
+}
+
+.navbar-brand{
+    margin: 5px;
+    margin-right: 10px;
+    color: whitesmoke;
+    font-family: 'Audiowide', cursive;
+    font-size: 26pt;
+    text-shadow: 2px 2px 8px #fafad2;
+}
+
+
+.wrapper1 {
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+}
+
+.wrapper2 {
+    background-color: transparent;
+    width: 100%;
+    height: 925px;
+}
+
+#nasa-logo {
+    --animate-duration: 8s;
+    --animate-delay: 4s;
+}
+
+main {
+    margin-top: -800px;
+}
+
+section{
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.70);
+    color: #fafad2;
+    /* border: 1px solid #fafad2; */
+}
+
+h3 {
+    color: whitesmoke;
+    text-shadow: 2px 2px 8px #fafad2;
+    padding: 10px;
+    text-align: center;
+}
+.modal-dialog {
+    width: fit-content;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    bottom: 0;
+    left: 0;
+    z-index: 10040;
+    overflow: auto;
+    overflow-y: auto;
+}
+
+#nasa-results{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.card {
+    flex: 0 0 auto;
+    /* min-width: 25rem;
+    max-width: 50rem; */
+    min-width: 50%;
+}
+    
+
+.issimg{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.ins{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: -100px;
+}

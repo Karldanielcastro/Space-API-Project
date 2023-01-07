@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Chivo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+    <link rel="icon" href="../assets/icon.png">
+
+    <link rel="stylesheet" href="../css/style2.css">
+    <title>API</title>
+</head>
+
+<body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg bg-transparent navbar-dark" id="navbar">
+        <a class="navbar-brand">
+            WELCOME TO SPACE
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../index.html">Explore</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="library.html">Search Information</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    
+        <div class="wrapper1"></div>
+            <span id="nasa-logo" class="row justify-content-center animate__animated animate__fadeOut">
+                <!-- <img src="assets/nasa-logo-web-rgb.png" alt="nasa logo animation" style="width: 300px; height: 150px;"> -->
+            </span>
+        <div class="wrapper2"></div>
+
+    <!-- Main Content -->
+    <main class="main-content container">
+    <section id="nasa-images" class="row justify-content-center">
+        <h3>NASA Library Search Results:</h3>
+    </section>
+    <section class="row justify-content-center">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+                id="search-input">
+            <button id="search-button" class="btn btn-outline-light my-2 my-sm-0">Search</button>
+        </form>
+        <br>
+        <h3 class="ins">*Enter A Keyword That Relates To Space Or NASA In General*</h3>
+    </section>
+    <section id="nasa-images" class="row justify-content-center">
+        <div id="nasa-results" class="card-deck"></div>
+    </section>
+    
+        </section>
+        <hr>
+        <section class="row justify-content-center">
+            <h3 class="row">More Space Information</h3>
+            <img class= "issimg" src="../assets/more.jpg" width="1100" height="500">
+        </section>
+        <hr>
+        <section id="donki" class="row">
+            <div class="col-lg-12">
+                <h3>Database of Notifications Knowledge Information</h3>
+                <p>Date of last Coronal Mass Ejection:&nbsp;<span id="cme-date"></span></p>
+                <p>Date of last Solar Flare:&nbsp;<span id="flr-date"></span></p>
+            </div>
+
+            <!-- DATABASE OF NOTIFCATIONS KNOWLEDGE INFORMATION -->
+        </section>
+        <hr>
+        <section class="row justify-content-center">
+            <h3 class="row">The Coronal Mass Ejection</h3>
+            <img class= "issimg" src="../assets/coronal.jpg" width="1035" height="500">
+            <p>A coronal mass ejection (CME) is a significant release of plasma and accompanying magnetic field from the Sun's corona into the heliosphere. 
+                CMEs are often associated with solar flares and other forms of solar activity, but a broadly accepted theoretical understanding of these relationships has not been established. </p>
+        </section>
+        <hr>
+        <section class="row justify-content-center">
+            <h3 class="row">Solar Flare</h3>
+            <img class= "issimg" src="../assets/solar.jpg" width="1035" height="500">
+            <p>A solar flare is an intense localized eruption of electromagnetic radiation in the Sun's atmosphere. Flares occur in active regions and are often, but not always, accompanied by coronal mass ejections, solar particle events, and other solar phenomena. The occurrence of solar flares varies with the 11-year solar cycle.
+
+                Solar flares are thought to occur when stored magnetic energy in the Sun's atmosphere accelerates charged particles in the surrounding plasma. This results in the emission of electromagnetic radiation across the electromagnetic spectrum.</p>
+        </section>
+        <hr>
+    </main>
+
+    
+    <!-- SCRIPTS HERE -->
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <!-- LOCAL SCRIPTS -->
+    <script src="../script/nasa.js"></script>
+    <script>
+        $(document).ready(x => {
+            $('.wrapper2').css('height', $(window).height() * 1.2);
+        });
+        $(window).resize(function () {
+            $('.wrapper2').css('height', $(window).height() * 1.2);
+        });
+
+    </script>
+</body>
+
+</html>

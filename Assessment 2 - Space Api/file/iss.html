@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Explore the vast and awe-inspiring beauty of space exploration">
+    <link rel="stylesheet" href="../css/style3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Chivo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+        <link rel="icon" href="../assets/icon.png">
+
+    <title>API</title>
+</head>
+
+<body>
+     <!-- Start Navbar -->
+     <nav class="navbar navbar-expand-lg bg-transparent navbar-dark" id="navbar">
+        <a class="navbar-brand" href="../index.html">
+           < BACK
+        </a>
+    </nav>
+    <!-- End Navbar -->
+    <div class="container">
+        <div class="issInfo">
+            <div id="mapid"></div>
+        </div>
+        <div id="data">
+            <div id="latitude">
+                <img src="../assets/lat.png">
+                <p>Latitude: <span id="lat"></span>&deg;</p>
+            </div>
+            <div id="long">
+                <img src="../assets/long.png"/>
+                <p>Longitude: <span id="lng"></span>&deg;</p>
+            </div>
+            <div id="vel">
+                <img src="../assets/spee.png"/>
+                <p>Velocity: <span id="velocity"></span> mph</p>
+            </div>
+            <div id="alt">
+                <img src="../assets/alt.png"/>
+                <p>Altitude: <span id="altitude"></span> miles</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="../script/nasa.js"></script>
+
+</html>
